@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 52.5%;
+}
+
+body{
+    /* background-color: rgb(225, 225, 255); */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_menu{
+    background-color: #001638;
+}
+
+.navbar{
+    color: rgb(220, 232, 255);;
+    background-color: #001638;
+    /* padding: 2rem 0; */
+}
+
+.navbar a {
+    color: white;
+    font-size: 5rem;
+}
+
+.navbar a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 122, 248);
+    border-radius: 1rem;
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.nav-item a{
+    font-size: 2rem;
+}
+.navbar-toggler{
+    background-color: rgb(197, 196, 196);
+}
+
+.fa-snowflake{
+    transition: all linear;
+    animation: rotates 2s linear infinite;
+    color: rgb(86, 86, 250);;
+}
+
+@keyframes rotates {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main_header_left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_left p{
+    font-size: 2rem;
+}
+
+.main_header_right figure img {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+    height: 70vh;
+}
+
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+button:hover{
+    box-shadow: 0 10px 8px -8px rgb(0, 0, 179);
+}
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #001638;
+    margin-top: auto;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+.errimg img{
+    width: 60rem;
+    height: 30rem;
+}
+
+
+/* weather page css */
+
+.temp{
+    width: 60%;
+    position: relative;
+    margin: 5rem auto;
+}
+
+.temp input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #001638;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 3rem;
+}
+
+::placeholder{
+    color: rgb(101, 104, 128);
+}
+
+.temp input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border:none;
+    background:rgb(8, 96, 179);
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.temp input[type="submit"]:hover{
+    color: rgb(8, 96, 179);
+    background-color: white;
+}
+.tempinfo{
+    width: 50rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: rgb(0, 7, 49);
+    border-radius: 2rem;
+    font-family: sans-serif;
+}
+
+.toplayer{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(0, 7, 49);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.toplayer p{
+    color: cornsilk;
+    font-weight: 300;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.mainlayer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem; */
+}
+
+.mainlayer #cname{
+    padding: 2rem;
+    color: cornsilk;
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.mainlayer .middle{
+    display: flex;
+    justify-content: space-around;
+    color: cornsilk;
+}
+
+#cname{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+#temp2{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.fa{
+    font-size: 9rem;
+    font-weight: 900;
+    color: rgb(66, 154, 255);
+}
+.fas{
+    font-size: 9rem;
+    font-weight: 900;
+}
+
+sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+
+.hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+/* media quari */
+
+@media(max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .temp{
+        width: auto;
+    }
+    .tempinfo{
+        width: auto;
+    }
+    #temp2{
+        font-size: 5rem;
+    }
+    
+    .fa{
+        font-size: 5rem;
+    }
+    .fas{
+        font-size: 5rem;
+    }
+    
+    sup{
+        font-size: 5rem;
+    }
+}

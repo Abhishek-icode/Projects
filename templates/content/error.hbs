@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+    <title>Error</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    {{>navbar}}
+    <!-- header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 col-12 main_header_left align-items-center">
+                        <figure class="errimg">
+                            <img src="images/162-1622413_4chan-404-pages-hd-png-download.png" alt="" class="img-fluid">
+                        </figure>
+                        <h1>{{errmsg}}</h1>
+                        <a href="/"><button
+                                style="border: none; padding: 0.8rem 1.8rem; font-size: 1.4rem; border-radius: 2rem; text-transform: uppercase; box-shadow: 0 10px 8px -8px black; outline: none;">Go to back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    {{>footer}}
+</body>
+
+</html>
